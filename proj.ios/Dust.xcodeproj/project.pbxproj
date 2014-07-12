@@ -145,7 +145,8 @@
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2A96421719697CD700B37AC9 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2A96421419697CD700B37AC9 /* img */; };
+		2A26BD29196FE0DB00533C92 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A26BD27196FE0DB00533C92 /* TitleScene.cpp */; };
+		2A26BD2C1970C62700533C92 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2A26BD2B1970C62700533C92 /* img */; };
 		2A96421819697CD700B37AC9 /* nyanball.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A96421519697CD700B37AC9 /* nyanball.plist */; };
 		2A96421919697CD700B37AC9 /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 2A96421619697CD700B37AC9 /* sound */; };
 		2A96421C196983F200B37AC9 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A96421A196983F200B37AC9 /* GameScene.cpp */; };
@@ -461,8 +462,10 @@
 		1D6058910D05DD3D006BFB54 /* Dust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A26BD27196FE0DB00533C92 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScene.cpp; path = ../Classes/TitleScene.cpp; sourceTree = SOURCE_ROOT; };
+		2A26BD28196FE0DB00533C92 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/TitleScene.h; sourceTree = "<group>"; };
+		2A26BD2B1970C62700533C92 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		2A6EC14D1964CDDD000FC553 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppMacros.h; path = ../Classes/AppMacros.h; sourceTree = "<group>"; };
-		2A96421419697CD700B37AC9 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; name = img; path = ../../../../Desktop/Resources/img; sourceTree = "<group>"; };
 		2A96421519697CD700B37AC9 /* nyanball.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = nyanball.plist; path = ../../../../Desktop/Resources/nyanball.plist; sourceTree = "<group>"; };
 		2A96421619697CD700B37AC9 /* sound */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sound; path = ../../../../Desktop/Resources/sound; sourceTree = "<group>"; };
 		2A96421A196983F200B37AC9 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = ../Classes/GameScene.cpp; sourceTree = "<group>"; };
@@ -998,6 +1001,8 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				2A6EC14D1964CDDD000FC553 /* AppMacros.h */,
 				2A96421A196983F200B37AC9 /* GameScene.cpp */,
+				2A26BD27196FE0DB00533C92 /* TitleScene.cpp */,
+				2A26BD28196FE0DB00533C92 /* TitleScene.h */,
 				2A96421B196983F200B37AC9 /* GameScene.h */,
 			);
 			name = Classes;
@@ -1050,7 +1055,7 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2A96421419697CD700B37AC9 /* img */,
+				2A26BD2B1970C62700533C92 /* img */,
 				2A96421519697CD700B37AC9 /* nyanball.plist */,
 				2A96421619697CD700B37AC9 /* sound */,
 				1AFAF8B916D35E4900DB1158 /* CloseNormal.png */,
@@ -1142,9 +1147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A96421719697CD700B37AC9 /* img in Resources */,
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
+				2A26BD2C1970C62700533C92 /* img in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
@@ -1193,6 +1198,7 @@
 				15A3D9171682F7D5002FB0C5 /* b2ChainAndCircleContact.cpp in Sources */,
 				15A3D9181682F7D5002FB0C5 /* b2ChainAndPolygonContact.cpp in Sources */,
 				15A3D9191682F7D5002FB0C5 /* b2CircleContact.cpp in Sources */,
+				2A26BD29196FE0DB00533C92 /* TitleScene.cpp in Sources */,
 				15A3D91A1682F7D5002FB0C5 /* b2Contact.cpp in Sources */,
 				15A3D91B1682F7D5002FB0C5 /* b2ContactSolver.cpp in Sources */,
 				15A3D91C1682F7D5002FB0C5 /* b2EdgeAndCircleContact.cpp in Sources */,

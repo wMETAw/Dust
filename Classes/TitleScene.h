@@ -1,25 +1,25 @@
 //
-//  GameScene.h
+//  TitleScene.h
 //  Dust
 //
-//  Created by RYO on 2014/07/06.
+//  Created by RYO on 2014/07/11.
 //
 //
 
-#ifndef __Dust__GameScene__
-#define __Dust__GameScene__
+#ifndef __Dust__TitleScene__
+#define __Dust__TitleScene__
 
 #include "cocos2d.h"
-#include "TitleScene.h"
+#include "GameScene.h"
 
-class GameScene : public cocos2d::CCLayer
+class TitleScene : public cocos2d::CCLayer
 {
 public:
     virtual bool init();
     static cocos2d::CCScene* scene();
     
     // cocosで使われる.create()関数が定義されている
-    CREATE_FUNC(GameScene);
+    CREATE_FUNC(TitleScene);
     
 protected:
     
@@ -41,4 +41,4 @@ protected:
     
 };
 
-#endif /* defined(__Dust__GameScene__) */
+#endif /* defined(__Dust__TitleScene__) */
