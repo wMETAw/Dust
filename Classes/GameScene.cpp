@@ -1,13 +1,4 @@
-//
-//  GameScene.cpp
-//  Dust
-//
-//  Created by RYO on 2014/07/06.
-//
-//
-
 #include "GameScene.h"
-
 
 USING_NS_CC;
 

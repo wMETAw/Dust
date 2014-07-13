@@ -1,16 +1,9 @@
-//
-//  GameScene.h
-//  Dust
-//
-//  Created by RYO on 2014/07/06.
-//
-//
-
 #ifndef __Dust__GameScene__
 #define __Dust__GameScene__
 
 #include "cocos2d.h"
 #include "TitleScene.h"
+#include "PlaySE.h"
 
 class GameScene : public cocos2d::CCLayer
 {

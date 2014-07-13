@@ -1,16 +1,13 @@
-//
-//  TitleScene.h
-//  Dust
-//
-//  Created by RYO on 2014/07/11.
-//
-//
-
 #ifndef __Dust__TitleScene__
 #define __Dust__TitleScene__
 
 #include "cocos2d.h"
 #include "GameScene.h"
+#include "PlaySE.h"
+#include "SimpleAudioEngine.h"
+using namespace CocosDenshion;
+
+#define BGM_MAIN "sound/main_bgm.mp3"
 
 class TitleScene : public cocos2d::CCLayer
 {
@@ -26,15 +23,21 @@ protected:
     // 画像タグ
     enum kTag {
         kTagBackground = 1, // 背景
+        kTagStartBtn,       // スタートボタン
     };
     
     // Zオーダー（表示順序）
     enum kZOder {
         kZOrderBackground = 1, // 背景
+        kZOrderStartBtn,       // スタートボタン
     };
     
     // 背景の作成
     void createBackground();
+    
+    // スタートボタンの作成
+    void createStartBtn();
+    void tapStartBtn();
     
     // タッチ開始の処理
     virtual void ccTouchesBegan(cocos2d::CCSet* touches, cocos2d::CCEvent* event);
