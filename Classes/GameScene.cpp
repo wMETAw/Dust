@@ -4,7 +4,6 @@
 #define PTM_RATIO 400
 
 // シーンの作成
-// @return シーン
 CCScene* GameScene::scene()
 {
     // シーンを作成
