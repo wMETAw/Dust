@@ -148,8 +148,6 @@
 		2A26BD29196FE0DB00533C92 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A26BD27196FE0DB00533C92 /* TitleScene.cpp */; };
 		2A26BD2C1970C62700533C92 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2A26BD2B1970C62700533C92 /* img */; };
 		2A340B63197A91F0006E45BD /* GB2ShapeCache-x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A340B61197A91F0006E45BD /* GB2ShapeCache-x.cpp */; };
-		2A340B66197AA412006E45BD /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A340B65197AA412006E45BD /* test.plist */; };
-		2A340B68197AA969006E45BD /* test2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A340B67197AA969006E45BD /* test2.plist */; };
 		2A340B6A197AAC1C006E45BD /* test3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A340B69197AAC1C006E45BD /* test3.plist */; };
 		2A51A26019725E0200524B49 /* PlaySE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A51A25E19725E0200524B49 /* PlaySE.cpp */; };
 		2A51A2621972A7E700524B49 /* sound in Resources */ = {isa = PBXBuildFile; fileRef = 2A51A2611972A7E700524B49 /* sound */; };
@@ -472,8 +470,6 @@
 		2A26BD2B1970C62700533C92 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
 		2A340B61197A91F0006E45BD /* GB2ShapeCache-x.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GB2ShapeCache-x.cpp"; sourceTree = "<group>"; };
 		2A340B62197A91F0006E45BD /* GB2ShapeCache-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GB2ShapeCache-x.h"; sourceTree = "<group>"; };
-		2A340B65197AA412006E45BD /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
-		2A340B67197AA969006E45BD /* test2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test2.plist; sourceTree = "<group>"; };
 		2A340B69197AAC1C006E45BD /* test3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test3.plist; sourceTree = "<group>"; };
 		2A51A25E19725E0200524B49 /* PlaySE.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlaySE.cpp; path = ../Classes/PlaySE.cpp; sourceTree = "<group>"; };
 		2A51A25F19725E0200524B49 /* PlaySE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaySE.h; path = ../Classes/PlaySE.h; sourceTree = "<group>"; };
@@ -1072,8 +1068,6 @@
 			isa = PBXGroup;
 			children = (
 				2A340B69197AAC1C006E45BD /* test3.plist */,
-				2A340B67197AA969006E45BD /* test2.plist */,
-				2A340B65197AA412006E45BD /* test.plist */,
 				2A51A2611972A7E700524B49 /* sound */,
 				2A26BD2B1970C62700533C92 /* img */,
 				2A96421519697CD700B37AC9 /* nyanball.plist */,
@@ -1169,11 +1163,9 @@
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				2A26BD2C1970C62700533C92 /* img in Resources */,
-				2A340B66197AA412006E45BD /* test.plist in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
-				2A340B68197AA969006E45BD /* test2.plist in Resources */,
 				2A51A2621972A7E700524B49 /* sound in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
