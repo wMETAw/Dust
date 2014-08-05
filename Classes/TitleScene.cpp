@@ -1,11 +1,3 @@
-//
-//  TitleScene.cpp
-//  Dust
-//
-//  Created by RYO on 2014/07/11.
-//
-//
-
 #include "TitleScene.h"
 
 USING_NS_CC;
@@ -22,9 +14,6 @@ void TitleScene::ccTouchesBegan(CCSet* touches, CCEvent* event)
         if(!touch) {
             break;
         }
-
-        // ページめくりでシーンきりかえ【引数】アニメーション時間、シーンのポインタ
-        CCDirector::sharedDirector()->replaceScene(CCTransitionFadeTR::create(0.5f, GameScene::scene()));
         
     }
 }
@@ -39,6 +28,25 @@ void TitleScene::createBackground()
     CCSprite* bg = CCSprite::create("title_bg.png");
     bg->setPosition(CCPoint(winSize.width/2, winSize.height/2));
     this->addChild(bg, kZOrderBackground, kTagBackground);
+}
+
+// スタートボタン作成
+void TitleScene::createStartBtn()
+{
+    CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+    CCMenuItemImage* start = CCMenuItemImage::create("ball.png", "ball.png", this, menu_selector(TitleScene::tapStartBtn));
+    start->setPosition(ccp(winSize.width * 0.5, winSize.height * 0.5));
+    
+    CCMenu* menu = CCMenu::create(start, NULL);
+    menu->setPosition(CCPointZero);
+    this->addChild(menu, kZOrderStartBtn);
+}
+
+// スタートボタンタップ時の処理
+void TitleScene::tapStartBtn()
+{
+    // ページめくりでシーンきりかえ【引数】アニメーション時間、シーンのポインタ
+    CCDirector::sharedDirector()->replaceScene(CCTransitionFadeTR::create(0.5f, GameScene::scene()));
 }
 
 // シーンの作成
@@ -70,6 +78,13 @@ bool TitleScene::init()
     
     // 背景の表示
     createBackground();
+    
+    // スタートボタンの作成
+    createStartBtn();
+    
+    // BGMのロードし、再生
+    SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic(BGM_MAIN);
+    SimpleAudioEngine::sharedEngine()->playBackgroundMusic(BGM_MAIN, true);
     
     return true;
 }
