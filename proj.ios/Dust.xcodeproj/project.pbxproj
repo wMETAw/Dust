@@ -147,6 +147,12 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2A26BD29196FE0DB00533C92 /* TitleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A26BD27196FE0DB00533C92 /* TitleScene.cpp */; };
 		2A26BD2C1970C62700533C92 /* img in Resources */ = {isa = PBXBuildFile; fileRef = 2A26BD2B1970C62700533C92 /* img */; };
+		2A30FDAD19989B68001090E5 /* main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A30FDAC19989B68001090E5 /* main.plist */; };
+		2A30FDAF19989DB1001090E5 /* main2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A30FDAE19989DB1001090E5 /* main2.plist */; };
+		2A30FDB11998A045001090E5 /* main3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A30FDB01998A045001090E5 /* main3.plist */; };
+		2A30FDB31998A642001090E5 /* main4.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A30FDB21998A642001090E5 /* main4.plist */; };
+		2A30FDB51998A7C5001090E5 /* main5.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A30FDB41998A7C5001090E5 /* main5.plist */; };
+		2A30FDB71998A933001090E5 /* main6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A30FDB61998A933001090E5 /* main6.plist */; };
 		2A340B63197A91F0006E45BD /* GB2ShapeCache-x.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A340B61197A91F0006E45BD /* GB2ShapeCache-x.cpp */; };
 		2A340B6A197AAC1C006E45BD /* test3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A340B69197AAC1C006E45BD /* test3.plist */; };
 		2A51A26019725E0200524B49 /* PlaySE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A51A25E19725E0200524B49 /* PlaySE.cpp */; };
@@ -468,6 +474,12 @@
 		2A26BD27196FE0DB00533C92 /* TitleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TitleScene.cpp; path = ../Classes/TitleScene.cpp; sourceTree = SOURCE_ROOT; };
 		2A26BD28196FE0DB00533C92 /* TitleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleScene.h; path = ../Classes/TitleScene.h; sourceTree = "<group>"; };
 		2A26BD2B1970C62700533C92 /* img */ = {isa = PBXFileReference; lastKnownFileType = folder; path = img; sourceTree = "<group>"; };
+		2A30FDAC19989B68001090E5 /* main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = main.plist; sourceTree = "<group>"; };
+		2A30FDAE19989DB1001090E5 /* main2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = main2.plist; sourceTree = "<group>"; };
+		2A30FDB01998A045001090E5 /* main3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = main3.plist; sourceTree = "<group>"; };
+		2A30FDB21998A642001090E5 /* main4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = main4.plist; sourceTree = "<group>"; };
+		2A30FDB41998A7C5001090E5 /* main5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = main5.plist; sourceTree = "<group>"; };
+		2A30FDB61998A933001090E5 /* main6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = main6.plist; sourceTree = "<group>"; };
 		2A340B61197A91F0006E45BD /* GB2ShapeCache-x.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "GB2ShapeCache-x.cpp"; sourceTree = "<group>"; };
 		2A340B62197A91F0006E45BD /* GB2ShapeCache-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GB2ShapeCache-x.h"; sourceTree = "<group>"; };
 		2A340B69197AAC1C006E45BD /* test3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test3.plist; sourceTree = "<group>"; };
@@ -1067,6 +1079,12 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2A30FDB61998A933001090E5 /* main6.plist */,
+				2A30FDB41998A7C5001090E5 /* main5.plist */,
+				2A30FDB21998A642001090E5 /* main4.plist */,
+				2A30FDB01998A045001090E5 /* main3.plist */,
+				2A30FDAE19989DB1001090E5 /* main2.plist */,
+				2A30FDAC19989B68001090E5 /* main.plist */,
 				2A340B69197AAC1C006E45BD /* test3.plist */,
 				2A51A2611972A7E700524B49 /* sound */,
 				2A26BD2B1970C62700533C92 /* img */,
@@ -1163,13 +1181,19 @@
 				7855E0E1153FEF240059DD9A /* Default.png in Resources */,
 				D4EF949A15BD2D8B00D803EB /* Icon-57.png in Resources */,
 				2A26BD2C1970C62700533C92 /* img in Resources */,
+				2A30FDB11998A045001090E5 /* main3.plist in Resources */,
 				D4EF949C15BD2D8E00D803EB /* Icon-114.png in Resources */,
 				D4EF949E15BD2D9600D803EB /* Icon-72.png in Resources */,
+				2A30FDB71998A933001090E5 /* main6.plist in Resources */,
 				D4EF94A015BD2D9800D803EB /* Icon-144.png in Resources */,
+				2A30FDB51998A7C5001090E5 /* main5.plist in Resources */,
+				2A30FDAF19989DB1001090E5 /* main2.plist in Resources */,
 				2A51A2621972A7E700524B49 /* sound in Resources */,
 				D41A0AD1160F154A004552AE /* Default-568h@2x.png in Resources */,
 				D446FD6E16102124000ADA7B /* Default@2x.png in Resources */,
+				2A30FDAD19989B68001090E5 /* main.plist in Resources */,
 				15A3D9961682F7F9002FB0C5 /* CMakeLists.txt in Resources */,
+				2A30FDB31998A642001090E5 /* main4.plist in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
 				2A340B6A197AAC1C006E45BD /* test3.plist in Resources */,
 				2A96421819697CD700B37AC9 /* nyanball.plist in Resources */,

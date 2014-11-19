@@ -33,6 +33,7 @@ protected:
     enum kZOder {
         kZOrderBackground = 1, // 背景
         kZOrderBall,
+        kZOrderDust,
     };
     
     // 物理ワールドの作成
@@ -46,6 +47,9 @@ protected:
     // ボールの作成
     void createBall();
     
+    // ゴミ箱の作成
+    void createDust();
+    
     // タッチ開始の処理
     virtual void ccTouchesBegan(cocos2d::CCSet* touches, cocos2d::CCEvent* event);
     
@@ -58,3 +62,13 @@ protected:
 };
 
 #endif /* defined(__Dust__GameScene__) */
+
+
+
+
+
+
+
+
+
+

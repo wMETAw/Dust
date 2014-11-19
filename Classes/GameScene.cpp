@@ -27,7 +27,7 @@ bool GameScene::init()
     }
     
     // シェイプデータの読み込み
-    gbox2d::GB2ShapeCache::sharedGB2ShapeCache()->addShapesWithFile("test3.plist");
+    gbox2d::GB2ShapeCache::sharedGB2ShapeCache()->addShapesWithFile("main6.plist");
     
     // 物理ワールドの設定
     initPhysics();
@@ -40,6 +40,9 @@ bool GameScene::init()
     
     // ボール作成
     createBall();
+    
+    // ゴミ箱の生成
+    createDust();
     
     // 毎フレームの処理の開始
     scheduleUpdate();
@@ -149,8 +152,8 @@ void GameScene::ccTouchesEnded(CCSet* touches, CCEvent* event)
         // タッチした物体があれば力を加える
         if (touchBody != NULL) {
 
-            float x = (touchEndPoint.x - touchStartPoint.x)*0.1;
-            float y = (touchEndPoint.y - touchStartPoint.y)*0.1;
+            float x = (touchEndPoint.x - touchStartPoint.x)*0.03;
+            float y = (touchEndPoint.y - touchStartPoint.y)*0.03;
             touchBody->ApplyForce(b2Vec2(x, y), touchBody->GetWorldCenter());
             touchBody = NULL;
         }
@@ -168,7 +171,7 @@ void GameScene::createBackground()
     
     // 背景
     CCSprite* bg = CCSprite::create("bg.png");
-    bg->setPosition(CCPoint(winSize.width/2, winSize.height/2));
+    bg->setPosition(ccp(0, winSize.height/4));
     this->addChild(bg, kZOrderBackground, kTagBackground);
     
     // 背景の物理構造
@@ -205,6 +208,30 @@ void GameScene::createBall()
     gbox2d::GB2ShapeCache* sc = gbox2d::GB2ShapeCache::sharedGB2ShapeCache();
     sc->addFixturesToBody(body, "ball");
     ball->setAnchorPoint(sc->anchorPointForShape("ball"));
+}
+
+// ゴミ箱の生成
+void GameScene::createDust()
+{
+    // ウィンドウサイズの取得
+    CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+    
+    // ボールの作成
+    CCPoint dustPoint = ccp(winSize.width * 0.75, winSize.height * 0.35);
+    CCSprite* dust = CCSprite::create("dust.png");
+    dust->setPosition(dustPoint);
+    this->addChild(dust, kZOrderDust);
+    
+    // ボールの物理構造
+    b2BodyDef dustBodyDef;
+    dustBodyDef.type = b2_dynamicBody;
+    dustBodyDef.position.Set(dustPoint.x / PTM_RATIO, dustPoint.y / PTM_RATIO);
+    dustBodyDef.userData = dust;
+    b2Body* body = world->CreateBody(&dustBodyDef);
+    
+    gbox2d::GB2ShapeCache* sc = gbox2d::GB2ShapeCache::sharedGB2ShapeCache();
+    sc->addFixturesToBody(body, "dust");
+    dust->setAnchorPoint(sc->anchorPointForShape("dust"));
 }
 
 
